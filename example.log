@@ -1,0 +1,10 @@
+INFO:root:[['Marur', '115.0', '170.0']]
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2020 13:47:42] "[37mGET /view/Marur?vc=CH++07+HD+8092&src=Tumkur&dest=Anantapur HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2020 13:47:46] "[35m[1mPOST /savedetails HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2020 13:47:46] "[37mGET /savedetails?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2020 13:47:46] "[37mGET /savedetails?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2020 13:47:46] "[37mGET /savedetails?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2020 13:47:46] "[37mGET /savedetails?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/tss-naveen/Projects/E-Toll/Flask_html/E_toll.py', reloading
+INFO:root:[['Marur', '115.0', '170.0']]
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2020 14:57:03] "[37mGET /view/Marur?vc=MH+08+MO+8833&src=Tumkur&dest=Anantapur HTTP/1.1[0m" 200 -

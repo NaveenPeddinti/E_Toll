@@ -1,0 +1,53 @@
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+        <title>List</title>  
+    </head>  
+    <body>  
+      
+    <h3>Registration Information</h3> 
+    <p>
+        VehicleNumber: {{ vn }} <br>
+        Source: {{ src }} <br>
+        Destination: {{ dest }} 
+    <table border=5>  
+        <thead>  
+            <td>TollName</td>  
+            <td>OnewayPrice</td>  
+            <td>TwowayPrice</td>  
+            
+        </thead>  
+          
+        {% for row in rows %}  
+          
+            <tr>  
+                <!--<td>{{row["Source"]}}</td>--> 
+                {% for cell in row %}  
+                    <td>{{cell}}</td>
+                {% endfor %}
+                  
+                 
+            </tr>  
+          
+        {% endfor %}  
+    </table>  
+    <br><br>  
+    {% for tolls in toll %}
+        <input type="checkbox" id="Type" name="tolls" value="Oneway">
+        <label for="tolls"> Oneway</label>
+        <input type="checkbox" id="Type" name="tolls" value="Twoway">
+        <label for="tolls"> Twoway</label><br>
+    {% endfor %}       
+    <p>Payment Mode:</p>
+    <input type="radio" id="G-Pay" name="Payment" value="G-Pay">
+    <label for="G-Pay">G-Pay</label>
+    <input type="radio" id="PhonePay" name="Payment" value="PhonePay">
+    <label for="PhonePay">PhonePay</label>
+    <input type="radio" id="Paytm" name="Payment" value="Paytm">
+    <label for="Paytm">Paytm</label><br><br>        
+    <button type="submit" value="Submit">Submit</button>
+    <button type="cancel" value="Cancel">Cancel</button><br><br>
+    <a href="/">Go back to home page</a>  
+      
+    </body>  
+    </html>  

@@ -1,0 +1,38 @@
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+        <title>List</title>  
+    </head>  
+    <body>  
+      
+    <h3>Toll Registration Information</h3>  
+    <table border=5>  
+        <thead>  
+            <td>VehicleNumber</td>  
+            <td>Source</td>  
+            <td>Destination</td>
+            <td>TollName</td>  
+            <td>OneWay</td>  
+            <td>TwoWay</td> 
+            <td>Payment</td>  
+             
+            
+        </thead>  
+          
+        {% for row in rows %}  
+          
+            <tr>  
+                <!--<td>{{row["Source"]}}</td>-->   
+                <td>{{row}}</td>
+                  
+                 
+            </tr>  
+          
+        {% endfor %}  
+    </table>  
+    <br><br>  
+      
+    <a href="/">Go back to home page</a>  
+      
+    </body>  
+    </html>  
